@@ -1,0 +1,23 @@
+$a = 10; $b = 0; $c = 10;
+
+$str = @"
+TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^NBELPeHBFHT}TnALVlBLOFAkHFOuFETpHCStHAUFAgcEAelclcn^r^r\tZvYxXyT|S~Pn SPm SOn TNn ULo0ULo#ULo-WHq!WFs XDt!
+"@
+
+for ($i = 1; $i -lt $str.Length; $i++) { 
+    [int][char]$a = $str[$b++]; 
+ 	while ($a-- -gt 64) { 
+ 	    if (++$c -eq 90) { 
+ 		$c = 10;
+ 		Write-Host "" 
+ 		} 
+ 		else { 
+ 		    if ($b % 2 -eq 0) {
+ 			    write-host '♥' -NoNewline -ForegroundColor Green
+            }
+			else {
+			 write-host ' ' -NoNewline
+ 			} 
+         }
+    }     
+}
