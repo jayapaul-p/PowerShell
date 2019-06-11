@@ -10,14 +10,14 @@ for ($i = 1; $i -lt $str.Length; $i++) {
  	    if (++$c -eq 90) { 
  		$c = 10;
  		Write-Host "" 
- 		} 
- 		else { 
- 		    if ($b % 2 -eq 0) {
- 			    write-host '♥' -NoNewline -ForegroundColor Green
-            }
-			else {
-			 write-host ' ' -NoNewline
- 			} 
-         }
-    }     
+ 	    } 
+ 	     else { 
+ 		if ($b % 2 -eq 0) {
+ 			write-host '♥' -NoNewline -ForegroundColor Green
+                    }
+		    else {
+		       write-host ' ' -NoNewline
+ 		    } 
+                }
+       }     
 }
