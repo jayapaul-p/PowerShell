@@ -1,4 +1,4 @@
-$a = 10; $b = 0; $c = 10; $d =0;
+$a = 10; $b = 0; $c = 10; $d = 0;
 
 $str = @"
 TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^NBELPeHBFHT}TnALVlBLOFAkHFOuFETpHCStHAUFAgcEAelclcn^r^r\tZvYxXyT|S~Pn SPm SOn TNn ULo0ULo#ULo-WHq!WFs XDt!
@@ -6,29 +6,27 @@ TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^NBELPeHBFHT}TnAL
 
 for ($i = 1; $i -lt $str.Length; $i++) { 
     [int][char]$a = $str[$b++]; 
- 	while ($a-- -gt 64) { 
- 	    if (++$c -eq 90) { 
- 		    $c = 10;
+    while ($a-- -gt 64) { 
+        if (++$c -eq 90) { 
+            $c = 10;
             $d++
- 		    Write-Host "" 
- 		} 
- 		else { 
- 		    if ($b % 2 -eq 0) {
-                
-                        if ($d -lt 15) {
-
- 			            write-host '♥' -NoNewline -ForegroundColor Red
-            }
-            elseif ($d -gt 14 -and $d -lt 30) {
- 			            write-host '♥' -NoNewline -ForegroundColor White
+            Write-Host "" 
+        } 
+        else { 
+            if ($b % 2 -eq 0) {
+                if ($d -lt 15) {
+                    write-host '♥' -NoNewline -ForegroundColor Red
+                }
+                elseif ($d -gt 14 -and $d -lt 30) {
+                    write-host '♥' -NoNewline -ForegroundColor White
+                }
+                else {
+                    write-host '♥' -NoNewline -ForegroundColor Green
+                }
             }
             else {
- 			            write-host '♥' -NoNewline -ForegroundColor Green
-            }
-            }
-			else {
-			 write-host ' ' -NoNewline
- 			} 
-         }
+                write-host ' ' -NoNewline
+            } 
+        }
     }     
 }
