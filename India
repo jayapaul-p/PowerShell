@@ -23,6 +23,7 @@ for ($i = 1; $i -lt $str.Length; $i++) {
          else {
  			      Write-Host '♥' -NoNewline -ForegroundColor Green
          }
+      }
       else {
         Write-Host ' ' -NoNewline
       } 
